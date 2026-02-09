@@ -1,0 +1,86 @@
+header{
+    background-color: #9f01fb;
+    color: antiquewhite;
+    text-align: center;
+    padding: 1em;
+}
+
+
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; /*tipo de fuente */
+    margin: 200; /*el margen*/
+    padding: 0;
+    background-color: #e19bff; /*el color del fondo*/
+}
+
+
+
+.divisionVertical {
+    display: flex;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .divisionVertical {
+        flex-direction: column;
+    }
+}
+
+.izquierda {
+    width: 50%;
+    padding: 10px;
+    background-color: lightblue;
+    margin: 5px;
+}
+
+.derecha {
+    width: 50%;
+    padding: 10px;
+    background-color: lightcoral;
+    margin: 5px;
+}
+
+
+.subtitulo {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #9f01fb;
+    font-weight: bold;
+}
+
+.subtitulo::before,
+.subtitulo::after {
+    content: "";
+    flex: 1;
+    border-bottom: 2px solid #9f01fb;
+    margin: 0 15px;
+}
+
+
+nav{
+    margin: 10px;
+    text-align: center;
+    color: #9f01fb;
+}
+
+nav ul li{ /*aplicar estilos a las listas de ul*/
+    display: inline; /*muestre uno encima de otro*/
+    margin-right: 10px;
+}
+
+nav ul{/*aplicar estilos al contenedor de ul*/
+    list-style-type: none; /*Elimina viñetas de las listas*/
+    padding: 0%;
+}
+
+main{
+    margin: 10px;
+}
+
+footer{
+    background-color: #9f01fb;
+    color:white;
+	text-align: center;
+	padding: 1em;
+}
